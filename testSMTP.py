@@ -19,10 +19,10 @@ def sendEmail() :
     # mail_pass = "zyh19870910"  # 口令
     receivers = ['405035715@qq.com']  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
 
-    message = MIMEText('cs', 'plain', 'utf-8')  # 三个参数：第一个为文本内容，第二个 plain 设置文本格式，第三个 utf-8 设置编码
+    message = MIMEText('dfienfkd', 'plain', 'utf-8')  # 三个参数：第一个为文本内容，第二个 plain 设置文本格式，第三个 utf-8 设置编码
     message['From'] = Header("张跃华", 'utf-8')
     message['To'] = ";".join(receivers)
-    subject = '工作'  # 标题
+    subject = '钜典邮件'  # 标题
     message['Subject'] = Header(subject, 'utf-8')
 
     try:

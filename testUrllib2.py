@@ -11,12 +11,12 @@ def urllib_test03():
               'password': '123456'
              }
 
-    data = urllib.parse.urlencode(values)  # 编码工作
+    data = urllib.parse.urlencode(values)           # 编码工作
     data = data.encode('utf-8')
 
-    req = urllib.request.Request(url, data)  # 发送请求同时传data表单
+    req = urllib.request.Request(url, data)         # 发送请求同时传data表单
     the_page = ''
-    with urllib.request.urlopen(req)  as response: # 接受反馈的信息
+    with urllib.request.urlopen(req) as response:  # 接受反馈的信息
         the_page = response.read().decode('utf-8')  # 读取反馈的内容
         return the_page
 
